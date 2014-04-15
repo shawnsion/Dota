@@ -3,8 +3,10 @@ using System.Collections;
 
 public class PlayerInRange : MonoBehaviour {
 	public GameObject tower;
+	float timer;
 	// Use this for initialization
 	void Start () {
+
 	}
 	
 	// Update is called once per frame
@@ -16,7 +18,7 @@ public class PlayerInRange : MonoBehaviour {
 		if (col.gameObject.tag == "Player") 
 		{
 			PlayerInfo playerInfo = col.gameObject.GetComponent<PlayerInfo>();
-			Camp towerInfo = tower.GetComponent<Camp>();
+			TowerInfo towerInfo = tower.GetComponent<TowerInfo>();
 			if(playerInfo.affiliation != towerInfo.affiliation){
 				if(playerInfo.timer > 0.0)
 					playerInfo.timer -= Time.deltaTime;

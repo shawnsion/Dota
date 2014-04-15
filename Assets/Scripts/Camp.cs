@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Camp : MonoBehaviour {
-	public MapInfo.Affiliation affiliation;
+	public GameObject tower;
 	// Use this for initialization
 	void Start () {
 
@@ -10,14 +10,15 @@ public class Camp : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (affiliation == MapInfo.Affiliation.none) {
-			particleSystem.startColor = Color.white;
+		TowerInfo towerInfo = tower.GetComponent<TowerInfo> ();
+		if (towerInfo.affiliation == MapInfo.Affiliation.none) {
+			particleSystem.startColor = MapInfo.white;
 		}
-		if (affiliation == MapInfo.Affiliation.red) {
-			particleSystem.startColor = new Color(255,0,150,255);
+		if (towerInfo.affiliation == MapInfo.Affiliation.red) {
+			particleSystem.startColor = MapInfo.red;
 		}
-		if (affiliation == MapInfo.Affiliation.blue) {
-			particleSystem.startColor = new Color(0,255,255,255);
+		if (towerInfo.affiliation == MapInfo.Affiliation.blue) {
+			particleSystem.startColor = MapInfo.blue;
 		}
 	}
 }
