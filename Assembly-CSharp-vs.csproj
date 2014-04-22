@@ -48,6 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ActionTest.cs" />
      <Compile Include="Assets\Scripts\Camp.cs" />
+     <Compile Include="Assets\Scripts\EnemyHpBar.cs" />
+     <Compile Include="Assets\Scripts\HpBar.cs" />
      <Compile Include="Assets\Scripts\MapInfo.cs" />
      <Compile Include="Assets\Scripts\PlayerInRange.cs" />
      <Compile Include="Assets\Scripts\PlayerInfo.cs" />

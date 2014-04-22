@@ -8,7 +8,7 @@ public class MapInfo : MonoBehaviour {
 	public static Color white = Color.white;
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame

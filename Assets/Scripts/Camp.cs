@@ -5,7 +5,6 @@ public class Camp : MonoBehaviour {
 	public GameObject tower;
 	// Use this for initialization
 	void Start () {
-
 	}
 	
 	// Update is called once per frame
@@ -21,4 +20,5 @@ public class Camp : MonoBehaviour {
 			particleSystem.startColor = MapInfo.blue;
 		}
 	}
+	
 }
